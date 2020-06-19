@@ -57,7 +57,7 @@ function keyPressed(pos, xpos, ypos){
 	  if(keyCode === UP_ARROW){
 		  console.log("darsh if arrow pressed "+ pos);
 	 
-			 Matter.Body.applyForce( package,package.position,{x:85,y:-85});
+			 Matter.Body.applyForce( package.body,package.position,{x:85,y:-85});
 		 }
 	 }
 	 

@@ -15,13 +15,9 @@ class CrubledPaper{
 
     display(){
         var pos = this.body.position;
-        fill("blue");
-        var xpos=pos.x;
-        var ypos=pos.y;
-        console.log("darsh display "+ xpos);
-
+        fill("purple");  
         circle(pos.x,pos.y,this.diameter);
-        keyPressed(pos, xpos, ypos);
+       
 
     }
 
