@@ -24,9 +24,9 @@ function setup() {
 	ground = new Ground(750,600,1600,20); 
 
 
-	container = new Container(1080,490,40,200);
-	container2 = new Container(1200,570,200,40);
-	container3 = new Container(1300,490,40,200);
+	container = new Container(40,50);
+	//container2 = new Container(1200,570,200,40);
+	//container3 = new Container(1300,490,40,200);
 	Engine.run(engine);
 }
 
@@ -37,8 +37,8 @@ function draw() {
  // circle(100,570,50);
   package.display();
   container.display();
-  container2.display();
-  container3.display();
+  //container2.display();
+ // container3.display();
   ground.display();
   drawSprites();
 
@@ -49,13 +49,13 @@ function keyPressed(pos, xpos, ypos){
 	  var boject= this.body;
 	  var xpos=xpos;
 	  var ypos=ypos;
-	  console.log("darsh before "+ xpos);
-	  console.log("darshbefore" + ypos);
+	 // console.log("darsh before "+ xpos);
+	  //console.log("darshbefore" + ypos);
   
   
 	  
 	  if(keyCode === UP_ARROW){
-		  console.log("darsh if arrow pressed "+ pos);
+		 // console.log("darsh if arrow pressed "+ pos);
 	 
 			 Matter.Body.applyForce( package.body,package.position,{x:85,y:-85});
 		 }

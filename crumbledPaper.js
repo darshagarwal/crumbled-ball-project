@@ -7,8 +7,9 @@ class CrubledPaper{
             density:1.2,
         }
 
-        this.body = Bodies.circle(x, y, diameter, options);
+        this.body = Bodies.circle(200,100, diameter, options);
         this.diameter = diameter;
+        this.image = loadImage("sprites/paper.png");
         
        World.add(world, this.body);
     }
@@ -16,7 +17,7 @@ class CrubledPaper{
     display(){
         var pos = this.body.position;
         fill("purple");  
-        circle(pos.x,pos.y,this.diameter);
+        image(this.image,200,100,this.diameter);
        
 
     }
